@@ -1,0 +1,82 @@
+enforce_secure_profile: false
+server_connect_timeout: 5000
+listeners:
+- bind_local_address: true
+  force_default_server: true
+  forced_hosts:
+    pvp.md-5.net: pvp
+  host: 0.0.0.0:45009
+  max_players: 1
+  motd: '&1Another Bungee server'
+  ping_passthrough: false
+  priorities:
+  - lobby
+  - survival
+  - lifesteal
+  - kitpvp
+  proxy_protocol: false
+  query_enabled: false
+  query_port: 45009
+  tab_list: GLOBAL_PING
+  tab_size: 60
+remote_ping_cache: -1
+network_compression_threshold: 256
+permissions:
+  admin:
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+log_pings: true
+connection_throttle_limit: 3
+prevent_proxy_connections: false
+timeout: 30000
+player_limit: -1
+ip_forward: true
+groups:
+  md_5:
+  - admin
+remote_ping_timeout: 5000
+connection_throttle: 4000
+log_commands: false
+stats: 30bed48b-1c5c-4ffd-89fe-d82a4a361e66
+online_mode: false
+forge_support: false
+disabled_commands:
+- disabledcommandhere
+servers:
+  bedwars:
+    address: 49.12.127.62:45006
+    motd: '&1Just another BungeeCord - Forced Host'
+    restricted: false
+  kitpvp:
+    address: 168.119.67.53:25646
+    motd: '&1Just another BungeeCord - Forced Host'
+    restricted: false
+  lifesteal:
+    address: 65.108.201.14:27276
+    motd: '&1Just another BungeeCord - Forced Host'
+    restricted: false
+  lobby:
+    address: 49.12.127.62:45003
+    motd: '&1Just another BungeeCord - Forced Host'
+    restricted: false
+  oneblock:
+    address: 49.12.127.62:45008
+    motd: '&1Just another BungeeCord - Forced Host'
+    restricted: false
+  pvppractice:
+    address: 49.12.127.62:45007
+    motd: '&1Just another BungeeCord - Forced Host'
+    restricted: false
+  skywars:
+    address: 49.12.127.62:45008
+    motd: '&1Just another BungeeCord - Forced Host'
+    restricted: false
+  survival:
+    address: 49.12.127.62:45004
+    motd: '&1Just another BungeeCord - Forced Host'
+    restricted: false
